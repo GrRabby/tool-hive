@@ -3,7 +3,7 @@ import { Big_Shoulders, Work_Sans, IBM_Plex_Mono } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
-
+import { Toaster } from "sonner";
 const bigShoulders = Big_Shoulders({
   variable: "--font-big-shoulders",
   subsets: ["latin"],
@@ -42,6 +42,17 @@ export default function RootLayout({
           <Navbar />
           <main className="flex-1">{children}</main>
           <Footer />
+          <Toaster
+            theme="dark"
+            position="top-right"
+            richColors
+            toastOptions={{
+              classNames: {
+                actionButton: "!bg-linear-to-br !from-[#F7E4A3] !via-[#E8C667] !to-[#C9962E] !text-[#1a1304]",
+                cancelButton: "!bg-white/5 !text-[#cfc6b8] !border !border-[#C9962E]/30",
+              },
+            }}
+          />
         </div>
       </body>
     </html>

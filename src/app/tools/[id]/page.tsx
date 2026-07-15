@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import ToolCard from "@/components/ToolCard";
 import { CATEGORY_LABELS, Tool, Owner } from "@/types";
+import { toast } from "sonner";
+import RequestButton from "@/components/Requestbutton";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
 
@@ -92,9 +94,7 @@ export default async function ToolDetailsPage({
               </div>
             </dl>
 
-            <button className="focus-ring mt-6 w-full rounded bg-amber py-3 text-sm font-bold uppercase tracking-wide text-ink transition-colors hover:bg-amber-dark">
-              Request to Borrow
-            </button>
+            <RequestButton/>
             {owner?.email && (
               <p className="mt-3 text-center text-xs text-ink-soft">
                 Or reach out directly at{" "}
