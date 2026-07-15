@@ -36,7 +36,7 @@ export default function Navbar() {
 
         <Link href="/" className="group flex items-center gap-2.5 outline-none">
           <img
-            src="/logo.png"
+            src="/Logo.png"
             alt="ToolHive Logo"
             height={50}
             width={50}
@@ -47,7 +47,7 @@ export default function Navbar() {
         </Link>
 
 
-        <nav className="hidden items-center gap-2 md:flex">
+        <nav className="hidden items-center gap-2 lg:flex">
           {links.map((link) => {
             const isActive = pathname === link.href;
             return (
@@ -66,7 +66,7 @@ export default function Navbar() {
         </nav>
 
 
-        <div className="hidden items-center gap-4 border-l border-zinc-800 pl-6 md:flex">
+        <div className="hidden items-center gap-4 border-l border-zinc-800 pl-6 lg:flex">
           {user ? (
             <div className="flex items-center gap-3">
               <div className="flex flex-col text-right">
@@ -117,7 +117,7 @@ export default function Navbar() {
 
 
         <button
-          className="rounded-xl border border-zinc-800 p-2 text-zinc-300 hover:bg-zinc-900 hover:text-white md:hidden"
+          className="rounded-xl border border-zinc-800 p-2 text-zinc-300 hover:bg-zinc-900 hover:text-white lg:hidden"
           aria-label="Toggle navigation interface"
           onClick={() => setOpen(!open)}
         >
@@ -127,7 +127,7 @@ export default function Navbar() {
 
 
       {open && (
-        <nav className="border-t border-zinc-900 bg-zinc-950 px-4 py-4 space-y-1.5 md:hidden shadow-xl">
+        <nav className="border-t border-zinc-900 bg-zinc-950 px-4 py-4 space-y-1.5 lg:hidden shadow-xl">
 
           {user && (
             <div className="mb-4 flex items-center gap-3 rounded-xl bg-zinc-900/60 p-3 border border-zinc-800">

@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2">
               <img
-            src="/logo.png"
+            src="/Logo.png"
             alt="ToolHive Logo"
             height={50}
             width={50}

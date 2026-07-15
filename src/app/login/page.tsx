@@ -79,7 +79,7 @@ export default function LoginPage() {
                         <div>
                             <div className="flex items-center gap-3">
                                 <img
-                                    src="/logo.png"
+                                    src="/Logo.png"
                                     alt="ToolHive Logo"
                                     height={50}
                                     width={50}
