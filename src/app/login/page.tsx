@@ -57,11 +57,11 @@ export default function LoginPage() {
     const fillDemo = (role: "user" | "admin") => {
         setFormError("");
         if (role === "admin") {
-            setValue("email", "admin@toollibrary.com", { shouldValidate: true });
-            setValue("password", "Password@123456", { shouldValidate: true });
+            setValue("email", "admin@toolhive.com", { shouldValidate: true });
+            setValue("password", "Password@123", { shouldValidate: true });
         } else {
-            setValue("email", "demo@toollibrary.com", { shouldValidate: true });
-            setValue("password", "Password@123456", { shouldValidate: true });
+            setValue("email", "demo@toolhive.com", { shouldValidate: true });
+            setValue("password", "Password@123", { shouldValidate: true });
         }
     };
 
